@@ -53,6 +53,3 @@ def load_nypd_data(csv_path, schema=nypd_schema):
             data.append(rec)
     print("\nData Loaded")
     return data
-
-data=load_nypd_data(csv_path)
-print(data[0:10])
