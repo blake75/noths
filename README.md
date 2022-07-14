@@ -1,3 +1,29 @@
+# Not On the High Street Data Engineering Code Challenge - submission by Phil Blakeman 14th July 2022
+
+Hello,
+
+Here is my submission for the Data Engineering challenge.
+
+The project consists of two main code directories; dev and src.
+
+Functions were developed one at a time in dev and pushed to the repository as should be reflected by the commit history. 
+
+The src directory has one module "src" where utility functions and requirement functions are all stored. Outputs, such as a user filetered csv and the sql database will be created in outputs.
+
+All the code can be run from the src directory as a simple "python main.py" with anything relevant output to the console.
+Individual functions can be run from the python intepreter once the module has been impoted: "from src import *", then "nypd_list=load_nypd_data(csv_path)" and so on.
+
+The code can also be tested from the src directory using unittest and the "test_src" module by typing "python -m unittest test_src.py". Test outputs are created in src/test_files.
+
+The code is tested on windows 10 Home 64 bit using python 3.8 but should be compatible with any platform using recent versions of python 3.
+Package dependencies are; os, inspect, csn and sqlite3.
+
+All the best,
+
+Phil
+
+---
+
 # Not On the High Street Data Engineering Code Challenge
 
 # 
