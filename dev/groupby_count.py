@@ -1,5 +1,4 @@
 from load_data import csv_path, load_nypd_data
-nypd_data=load_nypd_data(csv_path)
 
 def groupby_count(nypd_data:list, group_by_cols:list)->dict: 
     '''Function to count by any combination of group variables'''
@@ -14,7 +13,3 @@ def groupby_count(nypd_data:list, group_by_cols:list)->dict:
         dict_data[compos_key]=dict_data.get(compos_key,0)+1
     dict_data={k: v for k, v in sorted(dict_data.items(), key=lambda item: item[1], reverse=True)}
     return dict_data
-
-group_by_cols=["OFNS_DESC"]
-test=groupby_count(nypd_data, group_by_cols)
-print(test)
